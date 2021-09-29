@@ -1,0 +1,27 @@
+import java.util.*;
+import java.util.Scanner;
+class ValidVoterAge extends Exception
+{
+    public String toString()
+    {
+        return "You must be 18 years or older to cast your vote";
+    }
+
+}
+
+public class hegde
+{
+    public static void main(String[] args) throws ValidVoterAge
+    {
+        int age=15;
+        if(age<18)
+        {
+            throw new ValidVoterAge();
+        }
+        else
+        {
+            System.out.println("you have succesfully casted your vote");
+        }
+
+    }
+}

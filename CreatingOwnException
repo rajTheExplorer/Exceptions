@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Scanner;
+class LegelAgeForVoting extends Exception
+{
+    public String toString() {
+        return "Legal Age For Voting Is 18.So you cannot vote";
+    }
+}
+public class hegde
+{
+    public static void main(String[] args) throws LegelAgeForVoting
+    {
+        int age=12;
+        if(age<18)
+        {
+            throw new LegelAgeForVoting();
+        }
+        else
+        {
+            System.out.println("you have casted your vote");
+        }
+    }
+}

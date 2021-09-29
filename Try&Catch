@@ -1,0 +1,25 @@
+public class excep {
+    public static void main(String[] args) {
+        int[] arr={10,0,2,5,7,9};
+        try
+        {
+            try
+            {
+                int a=arr[0]/arr[1];
+                System.out.println(a);
+            }
+            catch(ArithmeticException ae)
+            {
+                System.out.println("do not divide by zero");
+            }
+            int b=arr[10];
+            System.out.println(b);
+        }
+        catch(ArrayIndexOutOfBoundsException aob)
+        {
+            System.out.println("out of boundaries");
+        }
+    }
+}
+//when we use nested try and catch blocks we can handle any number of exceptions unlike multiple catch blocks for one try block
+//even if multiple exceptions occur in a single try block it can only handle one exeception

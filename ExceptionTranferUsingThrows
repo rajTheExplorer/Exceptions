@@ -1,0 +1,35 @@
+import java.util.*;
+import java.util.Scanner;
+public class hegde
+{
+    public static void meth1() throws Exception
+    {
+        int a=8,b=0,c;
+        c=a/b;
+        System.out.println(c);
+    }
+
+    public static void meth2() throws Exception
+    {
+        try
+        {
+            meth1();
+        }
+        catch(ArithmeticException ae)
+        {
+            System.out.println("Execption handled at middle method");
+        }
+    }
+    public static void main(String[] args)  throws Exception
+    {
+//        try
+//        {
+//            meth1();
+//        }
+//        catch (ArithmeticException ae)
+//        {
+//            System.out.println("transferring arithmetic exeception");
+//        }
+        meth2();
+    }
+}

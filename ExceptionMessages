@@ -1,0 +1,32 @@
+import java.util.*;
+import java.util.Scanner;
+public class excep {
+    public static void main(String[] args) {
+        int[] arr={10,0,2,5,7,9};
+        String s=null;
+        try
+        {
+            System.out.println(s.length());
+        }
+        catch(ArrayIndexOutOfBoundsException aob)
+        {
+            System.out.println("out of boundaries");
+        }
+        catch(ArithmeticException ae)
+        {
+            System.out.println("do not divide by zero");
+        }
+        catch(NullPointerException e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("-----------");
+            System.out.println(e.toString());
+            System.out.println("e.string() and e are same");
+            System.out.println(e);
+            System.out.println("-----------");
+            e.printStackTrace();
+            // you dont have to use sop for printStackTrace
+             System.out.println("You cannot assign null to the variables");
+        }
+    }
+}

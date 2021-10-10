@@ -1,0 +1,26 @@
+class saiexc
+{
+	public static void main(String[] args) {
+		int i=10;
+		int j=0;
+		int[] arr={1,2,3,4,5,6};
+		int g;
+		try
+		{
+			try
+			{
+				System.out.println(arr[10]);
+			}
+			catch(ArrayIndexOutOfBoundsException e)
+			{
+				System.out.println("out f bound");
+			}	
+			g=i/j;
+		}
+		catch(ArithmeticException f)
+		{
+			System.out.println("ArithmeticException");
+		}
+		
+	}
+}

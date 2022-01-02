@@ -1,0 +1,36 @@
+
+import java.util.*;
+class minAge extends Exception
+{
+    public String toString()
+    {
+        return "Age is less than 18 years";
+    }
+}
+class king
+{
+    public void some() throws minAge
+    {
+        Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        if(age<18)
+        {
+            throw new minAge();
+        }
+    }
+}
+class kong
+{
+    public void some1() throws minAge
+    {
+        king k=new king();
+        k.some();
+    }
+}
+class App
+{
+    public static void main(String[] args) throws minAge {
+        kong k=new kong();
+        k.some1();
+    }
+}
